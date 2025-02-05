@@ -33,8 +33,8 @@ app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localho
 
 //this is the order, after the cors, that must be used to token authorization
 //authentication must go first
-//app.UseAuthentication();
-//app.UseAuthorization();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 
