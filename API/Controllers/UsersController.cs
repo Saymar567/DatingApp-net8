@@ -7,8 +7,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers;
 
-/*[ApiController]
-[Route("/api/[controller]")] localhost://número/api/users*/
+[ApiController]
+[Route("/api/[controller]")] //localhost: número/api/users*/
 
 //[Authorize]
 public class UsersController(DataContext context) : BaseApiController

@@ -28,13 +28,13 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();*/
 
-//app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4004", "https://localhost:4004));
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:4200", "https://localhost:4200"));
 //when we add something in here, we have to restart everything
 
 //this is the order, after the cors, that must be used to token authorization
 //authentication must go first
-app.UseAuthentication();
-app.UseAuthorization();
+//app.UseAuthentication();
+//app.UseAuthorization();
 
 app.MapControllers();
 
